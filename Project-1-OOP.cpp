@@ -64,7 +64,7 @@ public:
 	}
 	void Divide(float num) {
 		if (_IsZero(num)) {
-			cout << "Cannot divide by zero! Turned to 1\n";
+			cout << "Cannot divide by zero! Defaulting to 1\n";
 			num = 1;
 		}
 		_Result /= num;
@@ -98,4 +98,5 @@ int main() {
 	CalculatiorObj.Clear();
 	CalculatiorObj.PrintResult();
 	return 0;
+
 }
